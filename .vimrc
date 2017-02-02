@@ -1,3 +1,7 @@
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+call plug#end()
+
 set nocompatible
 set ts=4
 set sw=4
@@ -11,7 +15,7 @@ set modelines=1
 set number
 
 syntax on
-
+autocmd VimEnter * NERDTree
 " Highlight search matches
 set hlsearch
 
